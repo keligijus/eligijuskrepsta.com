@@ -5564,3 +5564,6 @@ figure {
 .social-share a span {
   margin-right: 0;
   font-size: 2rem; }
+
+.section-text + .section-features {
+  padding-top: 0; }
