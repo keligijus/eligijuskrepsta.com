@@ -1,0 +1,21 @@
+// @import "reset";
+@import "syntax";
+
+@import "landio/landio";
+@import "../bower_components/typicons.font/src/font/typicons.min.css";
+
+// custom scss
+.jumbotron {
+  h1, h2, h3 {
+    max-width: 90%;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
+}
+
+.social-share a span {
+  margin-right: 0;
+  font-size: 2rem;
+}

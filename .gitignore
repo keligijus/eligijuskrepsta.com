@@ -1,1 +1,5 @@
+_site
+.idea
+node_modules
 landio-html
+bower_components
