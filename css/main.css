@@ -5180,10 +5180,10 @@ figure {
   padding: 1rem; }
   @media (min-width: 992px) {
     .section-news article {
-      padding: 4rem 0; } }
+      padding: 1.8rem 0; } }
   @media (min-width: 1200px) {
     .section-news article {
-      padding: 6.5rem 0; } }
+      padding: 2.4rem 0; } }
 
 .section-news .icon-arrow-right {
   display: inline-block;

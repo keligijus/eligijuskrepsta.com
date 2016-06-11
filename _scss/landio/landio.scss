@@ -1268,11 +1268,13 @@ figure { position: relative; }
     padding: 1rem;
 
     @include media-breakpoint-up(lg) {
-      padding: 4rem 0;
+      // padding: 4rem 0;
+      padding: 1.8rem 0;
     }
 
     @include media-breakpoint-up(xl) {
-      padding: 6.5rem 0;
+      // padding: 6.5rem 0;
+      padding: 2.4rem 0;
     }
   }
 
