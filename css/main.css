@@ -5556,10 +5556,13 @@ figure {
   #chart-holder canvas {
     width: 170px; }
 
-.jumbotron h1, .jumbotron h2, .jumbotron h3 {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto; }
+.jumbotron {
+  background: #663fb5;
+  background: linear-gradient(to bottom, #663fb5 0%, #492D82 100%); }
+  .jumbotron h1, .jumbotron h2, .jumbotron h3 {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
 
 .social-share a span {
   margin-right: 0;

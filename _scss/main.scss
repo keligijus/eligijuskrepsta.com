@@ -6,6 +6,10 @@
 
 // custom scss
 .jumbotron {
+  background: #663fb5;
+  // 492D82
+  background: linear-gradient(to bottom, #663fb5 0% ,#492D82 100%);
+
   h1, h2, h3 {
     max-width: 90%;
     margin: {
