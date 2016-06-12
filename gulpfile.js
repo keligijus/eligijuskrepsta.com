@@ -3,11 +3,21 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+var concat      = require('gulp-concat');
+var uglify      = require('gulp-uglify');
+
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
+
+var src = {
+    js: [
+        '_landio-html/js/landio.js',
+        '_js/**/*.js'
+    ]
+}
 
 /**
  * Build the Jekyll Site
@@ -49,6 +59,16 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('_site/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('css'));
+});
+
+/**
+ * Concatenate javascript files
+ */
+gulp.task('js', function () {
+    return gulp.src('_landio-html/js/landio.min.js')
+        .pipe(concat('script.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('js'));
 });
 
 /**
