@@ -23,3 +23,26 @@
 .section-text + .section-features {
   padding-top: 0;
 }
+
+.theme-credits {
+  position: relative;
+  top: 55px;
+}
+
+.section-portfolio {
+  p {
+    line-height: 1.5
+  }
+
+  // figure {
+  //   display: flex;
+
+  //   img {
+  //     object-fit: cover;
+  //   }
+  // }
+}
+
+.label-info {
+  background-color: #6c59b4;
+}
