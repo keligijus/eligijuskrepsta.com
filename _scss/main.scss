@@ -33,16 +33,30 @@
   p {
     line-height: 1.5
   }
-
-  // figure {
-  //   display: flex;
-
-  //   img {
-  //     object-fit: cover;
-  //   }
-  // }
 }
 
 .label-info {
   background-color: #6c59b4;
+}
+
+.headshot {
+  padding: 1.25rem 0 1.3125rem .5rem;
+
+  img {
+    box-shadow: 0 0 0 4px #fff;
+    margin-right: .5rem;
+    margin-top: 1rem;
+  }
+  // &:after {
+  //   display: inline-block;
+  //   width: 0;
+  //   height: 0;
+  //   margin-right: .25rem;
+  //   margin-left: .25rem;
+  //   vertical-align: middle;
+  //   content: "";
+  //   border-top: 0.3em solid;
+  //   border-right: 0.3em solid transparent;
+  //   border-left: 0.3em solid transparent;
+  // }
 }

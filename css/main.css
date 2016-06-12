@@ -5577,3 +5577,10 @@ figure {
 
 .label-info {
   background-color: #6c59b4; }
+
+.headshot {
+  padding: 1.25rem 0 1.3125rem .5rem; }
+  .headshot img {
+    box-shadow: 0 0 0 4px #fff;
+    margin-right: .5rem;
+    margin-top: 1rem; }
