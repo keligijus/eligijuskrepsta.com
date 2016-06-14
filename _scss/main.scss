@@ -1,13 +1,12 @@
 // @import "reset";
+@import "../bower_components/typicons.font/src/font/typicons.min.css";
 @import "syntax";
 
 @import "landio/landio";
-@import "../bower_components/typicons.font/src/font/typicons.min.css";
 
 // custom scss
 .jumbotron {
   background: #663fb5;
-  // 492D82
   background: linear-gradient(to bottom, #663fb5 0% ,#492D82 100%);
 
   h1, h2, h3 {
@@ -33,6 +32,11 @@
   top: 55px;
 }
 
+.section-testimonials {
+  background: #663fb5;
+  background: linear-gradient(to bottom, #663fb5 0% ,#492D82 100%);
+}
+
 .section-portfolio {
   p {
     line-height: 1.5
@@ -51,16 +55,5 @@
     margin-right: .5rem;
     margin-top: 1rem;
   }
-  // &:after {
-  //   display: inline-block;
-  //   width: 0;
-  //   height: 0;
-  //   margin-right: .25rem;
-  //   margin-left: .25rem;
-  //   vertical-align: middle;
-  //   content: "";
-  //   border-top: 0.3em solid;
-  //   border-right: 0.3em solid transparent;
-  //   border-left: 0.3em solid transparent;
-  // }
+
 }

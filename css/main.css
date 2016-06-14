@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,500,300,700|Lato:400,700");
 @import url(../bower_components/typicons.font/src/font/typicons.min.css);
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,500,300,700|Lato:400,700");
 .highlight {
   background: #ffffff; }
 
@@ -5574,6 +5574,10 @@ figure {
 .theme-credits {
   position: relative;
   top: 55px; }
+
+.section-testimonials {
+  background: #663fb5;
+  background: linear-gradient(to bottom, #663fb5 0%, #492D82 100%); }
 
 .section-portfolio p {
   line-height: 1.5; }
