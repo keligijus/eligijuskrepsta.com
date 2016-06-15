@@ -1,13 +1,21 @@
 // @import "reset";
 @import "../bower_components/typicons.font/src/font/typicons.min.css";
-@import "syntax";
+// @import "syntax";
 
 @import "landio/landio";
 
 // custom scss
+.bg-inverse-custom .navbar-nav .nav-item {
+  background-color: transparent;
+}
+
 .jumbotron {
   background: #663fb5;
   background: linear-gradient(to bottom, #663fb5 0% ,#492D82 100%);
+
+  @include media-breakpoint-down(md) {
+    padding-top: 8.25rem;
+  }
 
   h1, h2, h3 {
     max-width: 90%;
@@ -29,7 +37,11 @@
 
 .theme-credits {
   position: relative;
-  top: 55px;
+  top: 20px;
+
+  @include media-breakpoint-up(md) {
+    top: 55px;
+  }
 }
 
 .section-testimonials {
@@ -41,6 +53,16 @@
   p {
     line-height: 1.5
   }
+
+  @include media-breakpoint-down(md) {
+    .row:after {
+      content: '';
+      display: block;
+      background-color: #fff;
+      height: 2rem;
+      width: 100%;
+    }
+  }
 }
 
 .label-info {
@@ -48,12 +70,22 @@
 }
 
 .headshot {
-  padding: 1.25rem 0 1.3125rem .5rem;
+
+  @include media-breakpoint-up(md) {
+    padding: 1.25rem 0 1.3125rem .5rem;
+  }
 
   img {
     box-shadow: 0 0 0 4px #fff;
-    margin-right: .5rem;
-    margin-top: 1rem;
+    height: 80px;
+    width: 80px;
+
+    @include media-breakpoint-up(md) {
+      margin-right: .5rem;
+      margin-top: 1rem;
+      height: 40px;
+      width: 40px;
+    }
   }
 
 }
