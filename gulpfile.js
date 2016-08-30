@@ -64,8 +64,15 @@ gulp.task('sass', function () {
 /**
  * Concatenate javascript files
  */
-gulp.task('js', function () {
+gulp.task('js-landio', function () {
     return gulp.src('_landio-html/js/landio.min.js')
+        .pipe(concat('script.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('js'));
+});
+
+gulp.task('js', function () {
+    return gulp.src(src.js)
         .pipe(concat('script.js'))
         .pipe(uglify())
         .pipe(gulp.dest('js'));
