@@ -1,6 +1,6 @@
 name: eligijuskrepsta.com
-markdown: redcarpet
-highlighter: rouge # or rouge or null
+# markdown: redcarpet
+# highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 # Permalinks
