@@ -1,9 +1,77 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
+{% include blogpost-hero.html %}
+
+<div class="container m-t-3 m-b-3">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 post-content">
+      {{ content }}
+    </div>
+  </div>
 </div>
+
+    <!-- Testimonials
+    ================================================== -->
+
+    <section class="section-testimonials text-xs-center bg-inverse">
+      <div class="container">
+        <h3 class="sr-only">Testimonials</h3>
+        <div id="carousel-testimonials" class="carousel slide" data-ride="carousel" data-interval="0">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <blockquote class="blockquote">
+                <img src="{{ page.attestantPhoto }}" height="80" width="80" alt="Avatar" class="img-circle">
+                <p class="h3">{{ page.testimonial }}</p>
+                <footer>{{ page.attestant }}<br>
+                <a href="{{ page.websiteUrl }}">{{ page.website }}</a></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sign Up
+    ================================================== -->
+
+    <section class="section-signup bg-faded">
+      <div class="container">
+        <h3 class="text-xs-center m-b-3">Let's talk and see if I can help you with your development needs!</h3>
+
+        <form action="https://formspree.io/k.eligijus@gmail.com"
+              method="POST">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="sr-only" for="name">Your name</label>
+                <input type="text" class="form-control form-control-lg" name="name" placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="_replyto">Your email</label>
+                <input type="email" class="form-control form-control-lg" name="_replyto" placeholder="Your email">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="form-group">
+                <label class="sr-only" for="message">Your message</label>
+                <textarea class="form-control" name="message" placeholder="Your message" rows="4" style="min-height: 147px;"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- NOTE: use this to tell the redirect page -->
+            <!-- <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
+            <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+              <!-- NOTE: honeypot for spammers -->
+              <input type="text" name="_gotcha" style="display:none" />
+              <input type="submit" class="btn btn-primary btn-block" value="Send">
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+

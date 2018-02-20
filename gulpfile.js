@@ -14,8 +14,7 @@ var messages = {
 
 var src = {
     js: [
-        '_landio-html/js/landio.js',
-        '_js/**/*.js'
+        'js/*.js'
     ]
 }
 

@@ -89,3 +89,9 @@
   }
 
 }
+
+.post-content {
+  p + h2, p + h3, p + h4, p + h5, p + h6 {
+    padding-top: 1.75rem;
+  }
+}

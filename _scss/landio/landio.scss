@@ -991,8 +991,9 @@ figure { position: relative; }
   overflow: hidden;
 
   img {
-    transition: transform .5s cubic-bezier(.7,0,.3,1);
-    transform: scale3d(1.8, 1.8, 1);
+    transition: transform .35s cubic-bezier(.7,0,.3,1);
+    // transform: scale3d(1.8, 1.8, 1);
+    transform: scale3d(1.4, 1.4, 1);
   }
 
   &:hover img {
@@ -1264,17 +1265,19 @@ figure { position: relative; }
   }
 
   article {
-    max-width: 22.5rem;
+    // max-width: 22.5rem;
     padding: 1rem;
 
     @include media-breakpoint-up(lg) {
       // padding: 4rem 0;
-      padding: 1.8rem 0;
+      // padding: 1.8rem 0;
+      padding: 1.8rem;
     }
 
     @include media-breakpoint-up(xl) {
       // padding: 6.5rem 0;
-      padding: 2.4rem 0;
+      // padding: 2.4rem 0;
+      padding: 2.4rem;
     }
   }
 

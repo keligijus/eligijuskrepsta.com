@@ -7,13 +7,13 @@ $(function(){
   'use strict';
 
   $.get("https://crossorigin.me/https://medium.com/feed/@keligijus", function(data) {
-    console.log(data);
-    // console.log($(data).find("channel>link")[0].textContent);
-
     var $xml = $(data);
     var items = $xml.find('channel>item');
+    var filteredItems = items.filter(function(index, item) {
+      return $(item).find('cc\\:license,license').length;
+    });
 
-    injectTemplate(items);
+    injectTemplate(filteredItems);
   });
 
   function xmlToObj(index, xml) {
@@ -97,7 +97,6 @@ $(function(){
   function injectTemplate(items) {
     var html = fullTemplate(items);
     var parsedHtml = $.parseHTML(html)[0]
-    console.warn(parsedHtml);
 
     $('#blog-container').html(parsedHtml);
   }
