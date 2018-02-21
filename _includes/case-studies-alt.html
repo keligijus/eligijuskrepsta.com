@@ -8,6 +8,9 @@
         <div class="bg-inverse">
 
         {% for post in site.posts %}
+        {% assign mod = forloop.index | modulo: 2 %}
+
+        {% if mod != 0 %}
 
           <div class="row">
             <div class="col-lg-6 p-r-0">
@@ -28,113 +31,32 @@
             </div>
           </div>
 
-        {% endfor %}
-<!--
+        {% endif %}
 
-          <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
-
+        {% if mod == 0 %}
 
           <div class="row">
             <div class="col-lg-6 p-r-0">
+              <article class="center-block">
+                <h5>{{ post.title }}</h5>
+                <p>{{ post.description }}</p>
+                <p>
+                  <a href="{{ post.url }}" class="font-italic">Read the case study <big><span class="typcn typcn-arrow-right"></span></big></a>
+                </p>
+              </article>
+            </div>
+            <div class="col-lg-6 p-l-0">
               <figure class="m-b-0 m-b-0 image-effect">
-                <a href="http://eligijuskrepsta.com">
-                  <img src="img/portfolio-items/uselibby.jpg" alt="Redal.eu" class="img-fluid">
+                <a href="{{ post.url }}">
+                  <img src="{{ post.image }}" alt="{{ post.title }}" class="img-fluid">
                 </a>
               </figure>
             </div>
-            <div class="col-lg-6 p-l-0">
-              <article class="center-block">
-                <h5>Libby - The Fairest Market Place for College Textbooks</h5>
-                <p>A custom marketplace built with AngularJS and Express. Integrations with Braintree Payments and third party APIs.</p>
-                <p>
-                  <a href="http://eligijuskrepsta.com" class="font-italic">Read the case study <big><span class="typcn typcn-arrow-right"></span></big></a>
-                </p>
-              </article>
-            </div>
           </div>
 
-          <div class="row">
-            <div class="col-lg-6 col-lg-push-6 p-l-0">
-              <figure class="m-b-0">
-                <img src="img/portfolio-items/infinite-scroll-app.jpg" alt="Infinite Scroll App" class="img-fluid">
-              </figure>
-            </div>
-            <div class="col-lg-6 col-lg-pull-6 p-r-0">
-              <article class="center-block">
-                <h5>Infinte Scroll App</h5>
-                <p>A Single Page App written in plain JavaScript. Pulls images form Dribbble API.</p>
-                <p>
-                    <a href="http://infinite-scroll-app.surge.sh" class="font-italic">Try This App</a><br>
-                    <a href="https://github.com/keligijus/infinite-scroll-app" class="font-italic">View Github Repo</a>
-                </p>
-                <span class="label label-info">HTLM5</span>
-                <span class="label label-info">CSS3</span>
-                <span class="label label-info">VanillaJS</span>
-              </article>
-            </div>
-          </div>
+        {% endif %}
 
-          <div class="row">
-            <div class="col-lg-6 p-r-0">
-              <figure class="m-b-0">
-                <img src="img/portfolio-items/bpi-agency.jpg" alt="BPI Agency" class="img-fluid">
-              </figure>
-            </div>
-            <div class="col-lg-6 p-l-0">
-              <article class="center-block">
-                <h5>Worked on various websites while at BPI Agency</h5>
-                <p>Have collaborated with a team of project managers, designers and developers.</p>
-                <p>
-                    <a href="http://bpiagency.com/" class="font-italic">Visit bpiagency.com</a>
-                </p>
-                <span class="label label-info">HTLM5</span>
-                <span class="label label-info">CSS3</span>
-                <span class="label label-info">jQuery</span>
-                <span class="label label-info">Photoshop</span>
-              </article>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-6 col-lg-push-6 p-l-0">
-              <figure class="m-b-0">
-                <img src="img/portfolio-items/vaikosirdis.jpg" alt="vaikosirdis.lt" class="img-fluid">
-              </figure>
-            </div>
-            <div class="col-lg-6 col-lg-pull-6 p-r-0">
-              <article class="center-block">
-                <h5>Website for Vaiko Širdies Asociacija</h5>
-                <p>Have worked in tandem with back end developer to build a website for a non profit organisation.</p>
-                <p>
-                    <a href="http://www.vaikosirdis.lt/" class="font-italic">Visit vaikosirdis.lt</a>
-                </p>
-                <span class="label label-info">HTML5</span>
-                <span class="label label-info">CSS3</span>
-                <br>
-              </article>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-6 p-r-0">
-              <figure class="m-b-0">
-                <img src="img/portfolio-items/uzuovejos.jpg" alt="Užuovėjos.lt" class="img-fluid">
-              </figure>
-            </div>
-            <div class="col-lg-6 p-l-0">
-              <article class="center-block">
-                <h5>Just a simple WordPress site built from scratch</h5>
-                <p>Designed and built the website for non profit organisation.</p>
-                <p>
-                    <a href="http://xn--uuovjos-w8a73g.lt/" class="font-italic">Visit užuovėjos.lt</a>
-                </p>
-                <span class="label label-info">WordPress</span>
-                <span class="label label-info">Bootstrap</span>
-                <span class="label label-info">UI Design</span>
-              </article>
-            </div>
-          </div>
- -->
+        {% endfor %}
         </div>
       </div>
     </section>
