@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 
 // list all the pages here
-const pages = ["index", "portfolio"];
+const pages = ["index", "portfolio", "contact"];
 
 /**
  * Custom PurgeCSS Extractor
