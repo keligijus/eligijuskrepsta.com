@@ -29,6 +29,7 @@ module.exports = {
       },
       // moss: "#ABB033",
       moss: {
+        lighter: "#738D7F",
         default: "#405a4c",
         darker: "#233635"
       },
