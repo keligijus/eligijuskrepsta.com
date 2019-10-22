@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  /* font-family: 'Open Sans',
+   sans-serif; */
+  font-family: 'Cutive Mono', monospace;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* .body-border {
+  border-image:   linear-gradient(to right,
+  #56B1FC 33.3%,
+   #FD746F 33.3%,
+   #FD746F 66.6%,
+  #405a4c 66.6%,
+   #405a4c 100%) 5;
+} */
+
+/* .lf-flag-border {
+  border-image: linear-gradient(to right,
+  #405a4c 0%,
+  #405a4c 80%,
+  #FDB913 80%,
+  #FDB913 85%,
+  #006A44 85%,
+  #006A44 90%,
+  #C1272D 90%,
+  #C1272D  95%,
+  #405a4c 95%,
+  #405a4c 100%) 5;
+} */
+
+/* .lt-flag-gradient {
+  background: linear-gradient(to right,
+  #FDB913 0%,
+  #FDB913 33.3%,
+  #006A44 33.3%,
+  #006A44 66.6%,
+  #C1272D 66.6%,
+  #C1272D  100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
