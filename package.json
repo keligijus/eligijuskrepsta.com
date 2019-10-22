@@ -1,36 +1,30 @@
 {
-  "name": "browser-sync-jekyll",
-  "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
-  "main": "gulpfile.js",
+  "name": "eligijuskrepsta.com",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "prod": "cross-env NODE_ENV=production webpack --no-progress"
   },
-  "author": "Shane Osbourne",
-  "license": "ISC",
+  "author": "Eligijus Krepsta",
+  "license": "UNLICENSED",
+  "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^1.3.7",
-    "gulp": "^3.8.8",
-    "gulp-autoprefixer": "1.0.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-sass": "^2.1.0",
-    "gulp-uglify": "^1.5.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
-  },
-  "keywords": [
-    "jekyll",
-    "gulp",
-    "sass",
-    "browsersync"
-  ],
-  "bugs": {
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
-  },
-  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync",
-  "dependencies": {
-    "handlebars": "^4.0.5"
+    "copy-webpack-plugin": "^5.0.2",
+    "cross-env": "^5.1",
+    "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "glob-all": "^3.1.0",
+    "html-webpack-plugin": "^3.0.6",
+    "postcss": "^6.0.19",
+    "postcss-loader": "^2.1.1",
+    "purgecss-webpack-plugin": "^1.4.0",
+    "style-loader": "^0.20.3",
+    "tailwindcss": "^1.0.0-beta.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
   }
 }
